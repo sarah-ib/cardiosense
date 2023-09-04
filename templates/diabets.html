@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cardiosense</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+    
+    
+      <!-- ***** Preloader End ***** -->
+    
+      <!-- ***** Header Area Start ***** -->
+
+      
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container" style="margin-top:-120px" >
+
+
+      <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="{{ url_for('index') }}"  class="logo">
+                  <img src="./assets/images/icon-2.png" style="width: 50px;float:left;    margin-top: 30px;
+                  margin-right: 10px;"><h4 style="float:right !important"><span>CardioSense</span></h4>
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li class="scroll-to-section"><a href="{{ url_for('index') }}" >HOME</a></li>
+                    <li class="scroll-to-section"><a href="{{ url_for('about') }}" >ABOUT US</a></li>
+                    <li class="scroll-to-section"><a href="{{ url_for('services') }}">SERVICES</a></li>
+                    <li class="scroll-to-section"><a href="{{ url_for('news') }}">NEWS</a></li>
+                    <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url_for('login') }}">START NOW</a></div></li> 
+                  </ul>     
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Diabetes and Heart Health Connection</h2>
+            <p>
+<b style=" color: #fe3f40;">Ready to take a proactive step towards understanding your health?</b>
+              
+              <br> 
+              
+              The intricate relationship between diabetes and heart health is a subject of paramount importance. Diabetes, particularly type 2, can significantly elevate the risk of cardiovascular diseases, such as coronary artery disease, heart attacks, and stroke. The connection arises from the way diabetes affects blood vessels, leading to atherosclerosis, a condition where arteries become narrowed and hardened due to the accumulation of plaque. This arterial damage can impede blood flow to the heart, increasing the chances of a cardiac event. Moreover, diabetes is known to exacerbate other risk factors for heart disease, including high blood pressure and high cholesterol levels. Hence, understanding and managing the interplay between diabetes and heart health is crucial for both preventing and effectively managing these potentially life-threatening conditions. </p>
+           
+          </div>
+          <img src="assets/images/diabets.webp" style="width:450px;margin-left: 100px;">
+        </div>
+
+    <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+      
+        <form id="contact"  action="/diabets" method="POST">
+
+
+          <div class="row">
+            
+            <div class="col-lg-6">
+              <fieldset>
+                <label for="pregs" >Pregnancies</label>
+                <input type="number" min=0 max=10 class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="pregs" id="" required placeholder="No. of Pregnancies">
+           
+              </fieldset>
+            </div>
+            <div class="col-lg-6">
+              <fieldset>
+                <label for="gluc" >Glucose Level</label>
+                <input type="number" class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="gluc" id="" required placeholder="Glucose Level (in mg/dL)">
+            </fieldset>
+            </div>
+
+            <div class="col-lg-6">
+                <fieldset>
+                    <label for="bp" >Blood Pressure</label>
+                    <input type="number" class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="bp" id="" required placeholder="Blood Pressure (in mm Hg)">
+            
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="skin">Skin Thickness</label>
+                    <input type="number" class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="skin" id="" required placeholder="Skin Thickness (in mm)">
+                </div>
+
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="insulin">Insulin</label>
+                    <input type="number" step=0.1 class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="insulin" id="" required placeholder="Insulin">
+           
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="bmi">BMI</label>
+                    <input type="number" step=0.1 class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="bmi" id="" required placeholder="BMI">
+        
+                  </select> </fieldset>
+              </div>
+
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="func" >Diabetes Pedigree Function</label>  
+                    <input type="number" step=0.001 class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="func" id="" required placeholder="Diabetes Pedigree Function">
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                    <label for="age" >Age</label> 
+                    <input type="number" min=21 class="col-md-4 col-sm-12 m-2 p-1 form-control"  name="age" id="" required placeholder="Age (in yrs)">
+         
+                  
+                </fieldset>
+              </div>
+
+           
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" style="margin-top: 20px;"  id="getResultButton"  class="main-button ">Get Result</button>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contact-dec">
+            <img src="assets/images/contact-decoration.png" alt="">
+          </div>
+        </form>
+    
+        <fieldset class="p-3">
+            
+           
+            {% if prediction != -1 %}
+            <div class="flex-container row m-auto justify-content-center">
+              <div class="alert alert-dismissible fade show mt-3 {% if prediction == 1 %} alert-danger {% else %} alert-success {% endif %}" role="alert">
+                {% if prediction == 0 %} 
+                The analysis indicates that it is improbable for the patient to have diabetes based on the provided data.
+                {% else %} 
+                  It is highly likely that the patient already has or will have diabetes! If you have existing risk factors or a family history of diabetes, it becomes even more crucial to stay vigilant. By recognizing the signs, adopting a healthier lifestyle, and seeking regular medical check-ups, you can actively manage your heart health and potentially lower the risk of diabetes-related complications. This knowledge empowers you to take charge of your well-being and make informed decisions to lead a healthier, more fulfilling life.
+                {% endif %}
+             
+              </div>
+            </div>
+            {% endif %}
+
+    
+      </div>
+
+   
+
+      </div>
+      </div>
+
+      <style>
+        @media (max-width: 992px){
+      .align-self-center {
+          margin-top: 100px !important
+      }
+      img{margin-left: 0px !important;}
+        }
+      </style>
+</body>
+</html>

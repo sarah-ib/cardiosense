@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cardiosense</title>
+
+    <!-- Bootstrap core CSS -->
+ 
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{{ url_for('index') }}" class="logo">
+              <img src="assets/images/icon-2.png" style="width: 50px;float:left;    margin-top: 30px;
+              margin-right: 10px;"><h4 style="float:right !important"><span>CardioSense</span></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{{ url_for('index') }}">HOME</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('about') }}" class="active">ABOUT US</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('services') }}">SERVICES</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('news') }}">NEWS</a></li>
+              <!-- <li class="scroll-to-section"><a href="#contact">MESSAGE US</a></li>  -->
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url_for('login') }}">START NOW</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div id="about" class="about-us section" style="margin-top: 80px;">
+    <div class="container">
+     
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/heartss.png" alt="person graphic">
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Personalized Risk Assessment</h4>
+                    <p>Gain insights into your individual heart attack risk based 
+                      on your unique health profile, empowering you to take preventive measures.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Early Detection & Monitoring</h4>
+                    <p>Detect potential heart health issues in their early stages and receive
+                       ongoing monitoring to ensure timely intervention.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Lifestyle Recommendations</h4>
+                    <p>Receive tailored recommendations for lifestyle modifications,
+                       exercise routines, and dietary changes to improve heart health</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>
+                      Comprehensive Heart Health Insights</h4>
+                    <p>Uncover a detailed analysis of your heart health status, providing you with the knowledge needed to make
+                       informed decisions and safeguard your well-being.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <img src="assets/images/AI.avif" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Heart disease  <em>Analysis and Prediction</em> using <span>Machine Learning Techniques</span> </h2>
+            <p>Heart disease is among the most common causes of death worldwide, nowadays. However,
+               early detection of cardiac problems and timely care of health practitioners can reduce the mortality rate. Therefore
+              , a reliable system for diagnosing such pathologies is of utmost importance to be able to process an
+               adequate treatment. 
+               The diagnosis of cardiac diseases is a challenging task and a crucial responsibility in the medical field,
+                and it involves the utmost care. However, there exist techniques for extracting and analyzing data, and the
+                 availability of a large collection of medical data enables accurate diagnosis. By using medical records such age,
+                  sex, blood sugar, heart rate achieved, 
+               chest pain type and blood pressure, it is feasible to increase the likelihood of heart disease prediction. </p>
+          </div>
+      
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" style="margin-top:20px" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Predictive Insights for Informed Health Choices</h2>
+            <p>Explore our innovative website to uncover accurate predictions for heart health. Equip yourself with the insights needed to make informed decisions and prioritize your well-being.</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">+961-76-184 152</a></span></h4>
+            </div>
+          </div>
+        </div>
+        <img src="assets/images/heart-s.png" alt="team meeting" style="width:400px;margin-left: 200px;">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2023. All Rights Reserved. 
+          
+     
+        </div>
+      </div>
+    </div>
+  <!-- Scripts -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+</body>
+<style>
+  @media (max-width: 992px){
+#about {
+   
+    margin-top: 170px !important;
+}
+  }
+</style>
+</html>

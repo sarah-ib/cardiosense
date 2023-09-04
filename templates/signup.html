@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cardiosense</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    
+      <!-- ***** Preloader End ***** -->
+    
+      <!-- ***** Header Area Start ***** -->
+
+      
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container" style="margin-top:-120px" >
+
+
+
+        <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+            <div class="container"  >
+              <div class="row">
+                <div class="col-12">
+                  <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{{ url_for('index') }}" class="logo">
+                      <img src="./assets/images/icon-2.png" style="width: 50px;float:left;    margin-top: 30px;
+                      margin-right: 10px;"><h4 style="float:right !important"><span>CardioSense</span></h4>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="{{ url_for('index') }}" >HOME</a></li>
+                      <li class="scroll-to-section"><a href="{{ url_for('about') }}" >ABOUT US</a></li>
+                      <li class="scroll-to-section"><a href="{{ url_for('services') }}">SERVICES</a></li>
+                      <li class="scroll-to-section"><a href="{{ url_for('news') }}">NEWS</a></li>
+                      <li class="scroll-to-section"><div class="main-red-button"><a href="{{ url_for('login') }}">START NOW</a></div></li> 
+                    </ul>      
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="limiter" style="margin-top:-180px" >
+            <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+                <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                    <form class="login100-form validate-form" action="{{ url_for('signup') }}" method="POST">
+                        <span class="login100-form-title p-b-49">
+                           <h2><img src="./assets/images/icon-2.png" style="width: 50px;"> SIGN UP
+                           </h2>   </span>
+    
+                        <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
+                            <span class="label-input100">Email</span>
+                            <input class="input100" type="email" name="email" required >
+                        
+                        </div>
+    
+                        <div style="margin-top:20px" class="wrap-input100 validate-input" data-validate="Password is required">
+                            <span class="label-input100">Password</span>
+                            <input class="input100" type="password" name="password" required >
+                         
+                        </div>
+                        
+                        
+                        
+                        <div class="container-login100-form-btn" style="margin-top:20px" >
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn">
+                                    Sign UP
+                                </button>
+                            </div>
+                        </div>
+    
+                        
+    
+                  
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+</div>
+</body>
+</html>

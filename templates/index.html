@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cardiosense</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{{ url_for('index') }}" class="logo">
+              <img src="./assets/images/icon-2.png" style="width: 50px;float:left;    margin-top: 30px;
+              margin-right: 10px;"><h4 style="float:right !important"><span>CardioSense</span></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{{ url_for('index') }}" class="active">HOME</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('about') }}" >ABOUT US</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('services') }}">SERVICES</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('news') }}">NEWS</a></li>
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url_for('login') }}">START NOW</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container"  style="margin-top:-50px">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h6>Your Health is Your Choice...</h6>
+                <h2>Predictive Insights <em>for</em><span> Informed Health</span> Choices</h2>
+                <p>Explore our innovative website to uncover accurate predictions for heart health.
+                   Equip yourself with the insights needed to make informed decisions and prioritize your well-being. 
+                   Whether you're seeking personalized guidance,
+                   our platform empowers you to take control of your cardiovascular health.
+                  </p>
+                  <div class="main-red-button"><a href="{{ url_for('login') }}">CHECK YOUR HEART HEALTH</a></div>
+               
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/heart.webp" alt="team meeting">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/heartss.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Personalized Risk Assessment</h4>
+                    <p>Gain insights into your individual heart attack risk based 
+                      on your unique health profile, empowering you to take preventive measures.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Early Detection & Monitoring</h4>
+                    <p>Detect potential heart health issues in their early stages and receive
+                       ongoing monitoring to ensure timely intervention.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Lifestyle Recommendations</h4>
+                    <p>Receive tailored recommendations for lifestyle modifications,
+                       exercise routines, and dietary changes to improve heart health</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>
+                      Comprehensive Heart Health Insights</h4>
+                    <p>Uncover a detailed analysis of your heart health status, providing you with the knowledge needed to make
+                       informed decisions and safeguard your well-being.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <!-- <img src="assets/images/AI.avif" alt=""> -->
+            <img src="assets/images/heart2.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Heart disease  <em>Analysis and Prediction</em> using <span>Machine Learning Techniques</span> </h2>
+            <p>Heart disease is among the most common causes of death worldwide, nowadays. However,
+               early detection of cardiac problems and timely care of health practitioners can reduce the mortality rate. Therefore
+              , a reliable system for diagnosing such pathologies is of utmost importance to be able to process an
+               adequate treatment. 
+               The diagnosis of cardiac diseases is a challenging task and a crucial responsibility in the medical field,
+                and it involves the utmost care. However, there exist techniques for extracting and analyzing data, and the
+                 availability of a large collection of medical data enables accurate diagnosis. By using medical records such age,
+                  sex, blood sugar, heart rate achieved, 
+               chest pain type and blood pressure, it is feasible to increase the likelihood of heart disease prediction. </p>
+          </div>
+      
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <!-- <img src="assets/images/AI.avif" alt=""> -->
+            <img src="assets/images/heart3.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Children's <em>Cardiovascular Diseases</em></h2>
+            <p>Children's cardiovascular diseases, although less common than in adults, have a profound impact on the well-being and development of young individuals. These conditions encompass a range of disorders affecting the heart and blood vessels, potentially leading to short-term symptoms and long-term health implications. While congenital heart defects are among the most prevalent cardiovascular issues in children, factors such as genetic predisposition, lifestyle choices, and environmental influences can also contribute to the development of heart-related conditions.
+
+              The diagnosis and treatment of cardiovascular diseases in children require specialized care and a multidisciplinary approach involving pediatric cardiologists, surgeons, and other healthcare professionals. Early detection and intervention are crucial in managing these conditions and ensuring the best possible outcomes for young patients. </p>
+          </div>
+      
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Understanding Heart Health Indicators: <span> Exploring Key Features</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:-50px">
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                
+                <p>The age of the individual, a crucial factor as heart attack risk generally increases with age.</p>
+              </div>
+              <div class="showed-content">
+                <h5 style=" font-weight: 700;">Age <br></h5>
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-3 col-sm-6">
+         
+          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="hidden-content">
+              
+              <p>The biological sex of the individual (0 for female, 1 for male), which can influence heart health.</p>
+            </div>
+            <div class="showed-content">
+              <h5 style=" font-weight: 700;">Gender <br></h5>
+            </div>
+          </div>
+        
+      </div>
+
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                
+                <p>A numeric representation of chest pain type, providing insight into potential heart issues.</p>
+              </div>
+              <div class="showed-content">
+                <h5 style=" font-weight: 700;">Chest Pain <br></h5>
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-3 col-sm-6">
+         
+          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="hidden-content">
+              
+              <p>The resting blood pressure of the individual, a significant cardiovascular measure.</p>
+            </div>
+            <div class="showed-content">
+              <h5 style=" font-weight: 700;"> Blood Pressure</h5>
+            </div>
+          </div>
+        
+      </div>
+
+      </div>
+      <div class="row" style="margin-top: 30px;">
+      <div class="col-lg-3 col-sm-6">
+         
+        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="hidden-content">
+            
+            <p>The cholesterol level, an important indicator of heart health.</p>
+          </div>
+          <div class="showed-content">
+            <h5 style=" font-weight: 700;">Cholesterol <br> Level</h5>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+         
+      <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="hidden-content">
+          
+          <p>The fasting blood sugar level, indicating diabetes risk, which can impact heart health.</p>
+        </div>
+        <div class="showed-content">
+          <h5 style=" font-weight: 700;">Blood <br> Sugar</h5>
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="col-lg-3 col-sm-6">
+         
+    <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+      <div class="hidden-content">
+        
+        <p>A numerical value representing resting electrocardiographic results, offering insights into heart function.</p>
+      </div>
+      <div class="showed-content">
+        <h5 style=" font-weight: 700;">Electro cardiographic </h5>
+      </div>
+    </div>
+  
+</div>
+
+<div class="col-lg-3 col-sm-6">
+         
+  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="hidden-content">
+      
+      <p> The maximum heart rate achieved during stress testing, a valuable cardiovascular metric.</p>
+    </div>
+    <div class="showed-content">
+      <h5 style=" font-weight: 700;">Maximum  Heart Rate  </h5>
+    </div>
+  </div>
+
+</div>
+</div>
+
+ 
+<div class="row" style="margin-top:30px">
+
+<div class="col-lg-3 col-sm-6">
+         
+  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="hidden-content">
+      
+      <p>Presence of exercise-induced chest pain, indicating potential heart issues.</p>
+    </div>
+    <div class="showed-content">
+      <h5 style=" font-weight: 700;">Exercise  Angina </h5>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-lg-3 col-sm-6">
+         
+  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="hidden-content">
+      
+      <p>ST Depression Induced by Exercise Relative to Rest (oldpeak):
+         ST depression measured during exercise, an indicator of heart stress.</p>
+    </div>
+    <div class="showed-content">
+      <h5 style=" font-weight: 700;">ST Depression </h5>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-lg-3 col-sm-6">
+         
+  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="hidden-content">
+      
+      <p>Slope of the Peak Exercise ST Segment (slope): 
+        The slope of the peak exercise ST segment, reflecting changes in heart rate.</p>
+    </div>
+    <div class="showed-content">
+      <h5 style=" font-weight: 700;">Slope </h5>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-lg-3 col-sm-6">
+         
+  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="hidden-content">
+      
+      <p> A numerical representation of thalassemia type, contributing to heart health assessment.</p>
+    </div>
+    <div class="showed-content">
+      <h5 style=" font-weight: 700;">Thalassemia </h5>
+    </div>
+  </div>
+  <div class="main-blue-button" style="margin-top:20px"><a  href="{{ url_for('login') }}">Create your own Health Profile</a></div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+    <div class="col-lg-6 align-self-center">
+      <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+    
+        <h2 style="font-size:30px;line-height: 30px;"><span>The Intricate Connection Between Weight and Heart Health</span></h2>
+        <p>Maintaining a healthy weight is a crucial factor in promoting overall well-being and minimizing the risk of heart disease. The relationship between weight and heart health is intricate and multifaceted, with weight serving as a significant indicator of cardiovascular risk. Excess body weight, especially when accompanied by unhealthy lifestyle habits, can impose a substantial burden on the heart and increase the likelihood of developing heart-related complications.
+
+          Excessive weight gain is often associated with an increased risk of various heart conditions, including hypertension, high cholesterol, and type 2 diabetes. These conditions can collectively contribute to the development of atherosclerosis, a condition characterized by the buildup of plaque in the arteries. As plaque accumulates, the arteries narrow, impeding the flow of blood and oxygen to the heart muscle. This reduced blood flow can lead to chest pain, shortness of breath, and, in severe cases, heart attacks.</p>
+        
+      </div>
+    </div>
+
+      <div class="col-lg-6">
+        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img style="width:400px" src="assets/images/info.jpg" alt="">
+          <p>Discover the significance of your Body Mass Index (BMI) as you check it below. Your BMI plays a crucial role in understanding your overall health and its impact on your heart's well-being.</p>
+          
+          <div id="search">
+            <fieldset style="margin:10px">
+           
+              <input style=" padding: 10px;
+              border-radius: 50px;
+              border: 1px solid #03a4ed;" type="number" name="weight" id="weight" class="email" placeholder="Your weight (Kg).." autocomplete="on" required>
+           
+              <input style=" padding: 10px;
+              border-radius: 50px;
+              border: 1px solid #03a4ed;"  type="number" name="height" id="height"  class="email" placeholder="Your height(cm).." autocomplete="on" required>
+           
+            </fieldset>
+            <span style=" font-weight: 700;
+            color: #03a4ed;">Remember your BMI; you will use it in your next predictions! </span>
+            <fieldset>
+              <button  style="    background: #ffebec;
+              border: #ffebec;
+              padding: 10px;
+              width: 200px;
+              border-radius: 50px;
+              margin-top: 20px;"  id="btn" class="main-button">Analyze </button>
+            </fieldset>
+            <div style="font-size: 20px;
+            margin-top: 20px;
+            font-weight: 700;
+            color: #03a4ed;
+            letter-spacing: 1.3px;" id="result"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  
+  </div></div></div>
+
+  
+  <script>
+    window.onload = () => {
+	let button = document.querySelector("#btn");
+
+	// Function for calculating BMI
+	button.addEventListener("click", calculateBMI);
+};
+
+function calculateBMI() {
+
+	/* Getting input from user into height variable.
+	Input is string so typecasting is necessary. */
+	let height = parseInt(document
+			.querySelector("#height").value);
+
+	/* Getting input from user into weight variable.
+	Input is string so typecasting is necessary.*/
+	let weight = parseInt(document
+			.querySelector("#weight").value);
+
+	let result = document.querySelector("#result");
+
+	// Checking the user providing a proper
+	// value or not
+	if (height === "" || isNaN(height))
+		result.innerHTML = "Provide a valid Height!";
+
+	else if (weight === "" || isNaN(weight))
+		result.innerHTML = "Provide a valid Weight!";
+
+	// If both input is valid, calculate the bmi
+	else {
+
+		// Fixing upto 2 decimal places
+		let bmi = (weight / ((height * height)
+							/ 10000)).toFixed(2);
+
+		// Dividing as per the bmi conditions
+		if (bmi < 18.6) result.innerHTML =
+			`Under Weight : <span>${bmi}</span>`;
+
+		else if (bmi >= 18.6 && bmi < 24.9)
+			result.innerHTML =
+				`Normal : <span>${bmi}</span>`;
+
+        else if (bmi >= 25 && bmi < 29.9)
+			result.innerHTML =
+				`Over Weight : <span>${bmi}</span>`;
+
+        else if (bmi >= 30 && bmi < 39.9)
+			result.innerHTML =
+				`Obese : <span>${bmi}</span>`;
+
+		else result.innerHTML =
+			`Morbidly Obese : <span>${bmi}</span>`;
+	}
+}
+
+  </script>
+  </div>
+    </div>
+  </div> 
+
+
+
+
+  <div id="portfolio" class="our-portfolio section" style="padding-top:10px !important">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Understanding Diabetes Indicators: <span> Exploring Key Features</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:-50px">
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                
+                <p>Number of times the patient has been pregnant. This feature might be relevant because pregnancy can affect insulin sensitivity.</p>
+              </div>
+              <div class="showed-content">
+                <h5 style=" font-weight: 700;">Pregnancies <br></h5>
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-3 col-sm-6">
+         
+          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="hidden-content">
+              
+              <p>Plasma glucose concentration after consuming a glucose tolerance test. High glucose levels can indicate insulin resistance or diabetes.</p>
+            </div>
+            <div class="showed-content">
+              <h5 style=" font-weight: 700;">Glucose <br></h5>
+            </div>
+          </div>
+        
+      </div>
+
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                
+                <p>Diastolic blood pressure (mm Hg). Elevated blood pressure can be a risk factor for diabetes and its complications.</p>
+              </div>
+              <div class="showed-content">
+                <h5 style=" font-weight: 700;">Blood Pressure <br></h5>
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-3 col-sm-6">
+         
+          <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="hidden-content">
+              
+              <p>Thickness of skinfold at triceps. Skin thickness may be correlated with body fat percentage and metabolic health.</p>
+            </div>
+            <div class="showed-content">
+              <h5 style=" font-weight: 700;"> Skin Thickness</h5>
+            </div>
+          </div>
+        
+      </div>
+
+      </div>
+      <div class="row" style="margin-top: 30px;">
+      <div class="col-lg-3 col-sm-6">
+         
+        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="hidden-content">
+            
+            <p> Two-Hour serum insulin (mu U/ml). Insulin is crucial for glucose metabolism; high levels might indicate insulin resistance.</p>
+          </div>
+          <div class="showed-content">
+            <h5 style=" font-weight: 700;">Insulin</h5>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+         
+      <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="hidden-content">
+          
+          <p>A function that represents the diabetes mellitus history in relatives and the genetic relationship of those relatives to the patient. A higher value might indicate genetic susceptibility.</p>
+        </div>
+        <div class="showed-content">
+          <h5 style=" font-weight: 700;">Diabetes Pedigree</h5>
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="col-lg-3 col-sm-6">
+         
+    <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+      <div class="hidden-content">
+        
+        <p>Weight in kilograms divided by the square of height in meters. High BMI can be associated with insulin resistance and type 2 diabetes.</p>
+      </div>
+      <div class="showed-content">
+        <h5 style=" font-weight: 700;">BMI</h5>
+      </div>
+    </div>
+  
+</div>
+   
+</div>
+
+
+
+
+  <div class="main-blue-button" style="margin-top:20px"><a  href="{{ url_for('diabets') }}">Let's check your Body</a></div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="contact" style="margin-top:20px" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Predictive Insights for Informed Health Choices</h2>
+            <p>Explore our innovative website to uncover accurate predictions for heart health. Equip yourself with the insights needed to make informed decisions and prioritize your well-being.</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">+961-76-184 152</a></span></h4>
+            </div>
+          </div>
+        </div>
+        <img src="assets/images/heart-s.png" alt="team meeting" style="width:400px;margin-left: 200px;">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2023. All Rights Reserved. 
+          
+     
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+</body>
+<style>
+@media (max-width: 992px){
+  .our-services {
+     
+      margin-top: -170px !important;
+  }
+    }
+  </style>
+</html>
